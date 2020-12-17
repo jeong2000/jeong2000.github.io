@@ -1,0 +1,248 @@
+<!DOCTYPE html><!--22061026_김정연-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>MIFFY</title>
+    <style>
+    *{
+      margin: 0;
+	    padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+       -ms-overflow-style: none;
+         text-align: center;
+          padding-left: 10%;
+          padding-right: 10%;
+          background-color:#fff7f3;
+    }
+    ::-webkit-scrollbar { display: none; }
+
+
+    p {
+      color: #874725;
+      margin-top: 10px;
+      font-family: '나눔스퀘어_ac';
+      line-height: 160%;
+      font-size: 13.2px;
+    }
+    /*Header/Blog Title*/
+    .header {
+      text-align: center;
+      background: none;
+      border-radius: 5px;
+    }
+
+    /*Style the top navigation bar*/
+    .topnav {
+      font-family: '나눔스퀘어_ac ExtraBold';
+      overflow: hidden;/*visible, scroll, auto*/
+      background-color: none;
+      border-top: solid 6px #e5a785;
+      border-bottom: solid 6px #e5a785;
+    }
+    /*Style the topnav links*/
+    .topnav a {
+      /*float: left;*/
+      display: inline-block;
+      color: #e5a785;
+      text-align: center;
+      padding: 14px 18px;
+      text-decoration: none;
+    }
+    .topnav a:hover {
+      background-color: none;
+      color: #ffe3d4;
+    }
+    #sub_menu {
+      margin-top: 10px;
+      font-family: "나눔스퀘어_ac ExtraBold";
+      text-align: left;
+      padding-left: 20px;
+      padding-right: 50px;
+    }
+    #sub_menu li {
+      padding-top: 3px;
+      padding-bottom: 3px;
+      padding-left: 20px;
+      border-radius: 3px;
+      font-size: 14px;
+      list-style-type: none;
+      line-height: 190%;
+      border-bottom: dotted 1px white;
+      background-color: #ffe3d4;
+      color: #e5a785;
+    }
+    #sub_menu li:hover {
+      color: #874725;
+      background-color: #e5a785;
+    }
+
+    .current {
+    font-size: 16px;
+    color: #874725;
+
+    }
+    .leftcolumn h3 {
+      padding-top: 10px;
+      margin-left: 20px;
+      margin-right: 50px;
+      height: 40px;
+      font-family: "나눔스퀘어_ac ExtraBold";
+      background-color: #e5a785;
+      border-radius: 6px;
+      font-size: 16px;
+      text-align: center;
+      color: white;
+    }
+    .leftcolumn h3:hover {
+      background-color: #d17142;
+      color: white;
+    }
+    .leftcolumn a {
+      text-decoration: none;
+    }
+    /*Create two unequeal columns that floats next to each other*/
+    /*left column*/
+    .leftcolumn {
+      padding-top: 20px;
+      float: left;
+      width: 20%;
+      text-align: right;
+    }
+    .centercolumn {
+      margin-top: 70px;
+      float: left;
+      width: 50%;
+    }
+    .rightcolumn {
+      width: 30%;
+      float: right;
+      padding-left: 25px;
+      margin-top: 70px;
+      text-align: left;
+/*background-color: yellow;*/
+    }
+
+      /*right column*/
+    .card {
+      text-align: left;
+      background-color: none;
+    }
+
+    .rightcolumn h3 {
+      color: #874725;
+      padding-top: 198px;
+      font-size: 16px;
+      font-family: "나눔스퀘어_ac ExtraBold";
+    }
+    .card2 {
+      font-size: 13px;
+      font-family: "나눔스퀘어_ac ExtraBold";
+      line-height: 150%;
+      color: #e5a785;
+    }
+
+    /*clear floats after the columns*/
+    .row:after { /*begore*/
+      content: ""; /*.row 다음에 content ""안에 있는 내용을 입력하시오.*/
+      display: table;
+      clear: both;
+    }
+
+    .footer {
+      color: white;
+      padding: 10px;
+      text-align: center;
+      background-color: #e5a785;
+      border-radius: 4px;
+    }
+    .fl {
+      padding-top:12px;
+      font-size: 12px;
+      font-family: "나눔스퀘어_ac ExtraBold";
+      text-align: center;
+    }
+    .fr {
+      padding-top:12px;
+      font-size: 9px;
+      font-family: "나눔스퀘어_ac ExtraBold";
+      float: right;
+    }
+
+    /* Responsive layout - when the screen is less than 800px wide,
+    make the two  columns stack on top of each other instead of next to each other*/
+    @media screen and (max-width: 800px) {
+      .leftcolumn, .rightcolumn {
+        width: 100%;
+        padding: 0;
+      }
+      /* Responsive layout - when the screen is less than 400px wide,
+      make the navigation link stack on top of each other instead of next to each other*/
+    }
+    @media screen and (max-width: 400px) {
+      .topnav a {
+        float: none;
+        width: 100%;
+      }
+    }
+
+
+
+
+      </style>
+  </head>
+  <body>
+    <div class="header" style= 'height: 120px'>
+      <a href= 'index.html'><img src= './img/miffylogo.gif' height='130px'></a>
+    </div>
+
+    <div class="topnav">
+      <a href="movingc.html">Moving Image</a>
+      <a href="designc.html">Contents Design</a>
+      <a href="3dc.html"  style= 'color: #874725'>3D Design</a>
+    <a href= "pgc.html">Programming</a>
+    </div>
+
+
+    <div class="row">
+      <div class="leftcolumn" style= 'height: 300px'> <a href= '3dc.html'>
+        <h3>3D Design</h3></a>
+          <nav id= 'sub_menu' style= 'height: 150px'>
+            <a href= '#.html'> <li><span class= 'current'>MIFFY</span></li></a>
+             <a href= 'innis.html'> <li>INNISFREE</li></a>
+          </nav>
+      </div>
+
+      <div class="centercolumn" style= 'height: 410px'>
+        <div class="card">
+          <video width= '100%' autoplay controls loop>
+            <source src= './miffy/miffyv.mp4' type='video/mp4'>
+              <source src= './miffy/miffyv.webm' type='video/webm'>
+                  <source src= './miffy/miffyv.ogg' type='video/ogg'>
+        </div>
+      </div>
+
+      <div class="rightcolumn" style= 'height: 100px'>
+        <div class="card2">
+          Professor | 조윤희 <br>
+          2020.10.24
+        </div>
+          <h3>[ "MIFFY" 3D 애니메이션 제작 ]</h3>
+          <p>3D 맥스를 배운 후 만든 첫번째 3D 애니메이션. <br>
+           직접 오브젝트를 만들고 움직여서 애니메이션을 제작했다.<br> 시간이 오래 걸린 작업이지만, <br>굉장히 재미있었고 그만큼 성취감도 컸던 작업.</p>
+        </div>
+
+      </div>
+        <!--class= 'row'에는 column 다음에 float해제시키는 css가 있으므로 footer전에 float해제를 css에 넣은것-->
+
+
+        <div class="footer" style= 'height: 55px'>
+          <span class= 'fr'>계원예술대학교</span>
+            <span class= 'fl'>Copyright_&nbsp JeongYeonKim</span>
+            </div>
+
+
+
+  </body>
+</html>

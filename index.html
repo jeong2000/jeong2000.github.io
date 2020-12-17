@@ -1,0 +1,187 @@
+<!DOCTYPE html><!--22061026_김정연-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JEONGYEON</title>
+    <style>
+    *{
+      margin: 0;
+	    padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+       -ms-overflow-style: none;
+         text-align: center;
+          padding-left: 10%;
+          padding-right: 10%;
+          background-color:#f9f9f9;
+    }
+    ::-webkit-scrollbar { display: none; }
+
+    p {
+      color: #777a84;
+      margin-top: 5px;
+      font-family: '나눔스퀘어_ac';
+      line-height: 150%;
+      font-size: 13px;
+    }
+    /*Header/Blog Title*/
+    .header {
+      text-align: center;
+      background: none;
+      border-radius: 5px;
+    }
+
+    /*Style the top navigation bar*/
+    .topnav {
+      font-family: '나눔스퀘어_ac ExtraBold';
+      overflow: hidden;/*visible, scroll, auto*/
+      background-color: none;
+      border-top: solid 6px #777a84;
+      border-bottom: solid 6px #777a84;
+    }
+    /*Style the topnav links*/
+    .topnav a {
+      /*float: left;*/
+      display: inline-block;
+      color: #777a84;
+      text-align: center;
+      padding: 14px 18px;
+      text-decoration: none;
+    }
+    .topnav a:hover {
+      background-color: none;
+      color: #dadde0;
+    }
+    /*Create two unequeal columns that floats next to each other*/
+    /*left column*/
+    .leftcolumn {
+      float: left;
+      width: 50%;
+      text-align: right;
+    }
+
+      /*right column*/
+    .rightcolumn {
+      float: right;
+      width: 50%;
+      background-color: none;
+      padding-left: 20px;
+    }
+
+    .fakeimg {
+      margin-top: 20px;
+      background-color: none;
+      height: 100%;
+    }
+    .card {
+      text-align: left;
+      border-radius: 3.5px;
+      background-color: none;
+      padding-left: 20px;
+      margin-bottom: 30px;
+      margin-top: 70px;
+    }
+    .card2 {
+      text-align: right;
+      background-color: none;
+      padding-left: 20px;
+      margin-top: 30px;
+      padding-bottom: 30px;
+      /*margin-left: 300px;*/
+    }
+    /*clear floats after the columns*/
+    .row:after { /*begore*/
+      content: ""; /*.row 다음에 content ""안에 있는 내용을 입력하시오.*/
+      display: table;
+      clear: both;
+    }
+    .bold {
+          padding: auto;
+      font-size: 13px;
+      font-family: "나눔스퀘어_ac ExtraBold";
+    }
+    .footer {
+      color: white;
+      padding: 10px;
+      text-align: center;
+      background-color: #777a84;
+      border-radius: 4px;
+    }
+    .fl {
+      padding-top:12px;
+      font-size: 12px;
+      font-family: "나눔스퀘어_ac ExtraBold";
+      text-align: center;
+    }
+    .fr {
+      padding-top:12px;
+      font-size: 9px;
+      font-family: "나눔스퀘어_ac ExtraBold";
+      float: right;
+    }
+
+    /* Responsive layout - when the screen is less than 800px wide,
+    make the two  columns stack on top of each other instead of next to each other*/
+    @media screen and (max-width: 800px) {
+      .leftcolumn, .rightcolumn {
+        width: 100%;
+        padding: 0;
+      }
+      /* Responsive layout - when the screen is less than 400px wide,
+      make the navigation link stack on top of each other instead of next to each other*/
+    }
+    @media screen and (max-width: 400px) {
+      .topnav a {
+        float: none;
+        width: 100%;
+      }
+    }
+
+
+      </style>
+  </head>
+  <body>
+    <div class="header" style= 'height: 120px'>
+      <a href= '#.html'><img src= './img/logo.gif' height='130px'></a>
+    </div>
+
+    <div class="topnav">
+      <a href="movingc.html">Moving Image</a>
+      <a href="designc.html">Contents Design</a>
+      <a href="3dc.html">3D Design</a>
+      <a href= "pgc.html">Programming</a>
+    </div>
+
+  <div class="fakeimg">
+    <img src= './img/gt.gif' height= '450px'>
+  </div>
+  <div class="row">
+    <div class="leftcolumn">
+      <div class="card2" style= 'height: 210px'>
+       <img src= './img/me.jpg' height='180px' style= 'border-radius: 180px;'>
+      </div>
+    </div>
+
+    <div class="rightcolumn">
+      <div class="card" style= 'height: 100px'>
+        <p><span class= 'bold'>이름 |</span> 김정연</p>
+        <p><span class= 'bold'>생년월일 |</span> 2000.04.17</p>
+        <p><span class= 'bold'>전공 |</span> 디지털미디어디자인</p>
+        <p><span class= 'bold'>Tool |</span></p>
+        <p><img src= './tool/bps.png' style= 'width: 30px;'>&nbsp<img src= './tool/bai.png' style= 'width: 30px;'>&nbsp<img src= './tool/bpr.png' style= 'width: 30px;'>
+        <img src= './tool/bae.png' style= 'width: 30px;'>&nbsp<img src= './tool/bxd.png' style= 'width: 30px;'>&nbsp<img src= './tool/b3d.png' style= 'width: 30px;'></p>
+
+
+      </div>
+    </div>
+  </div>
+
+  <div class="footer" style= 'height: 55px'>
+    <span class= 'fr'>계원예술대학교</span>
+      <span class= 'fl'>Copyright_&nbsp JeongYeonKim</span>
+      </div>
+
+
+  </body>
+</html>

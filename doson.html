@@ -1,0 +1,264 @@
+<!DOCTYPE html><!--22061026_김정연-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>DOSON</title>
+    <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      color: #60522b;
+       -ms-overflow-style: none;
+         text-align: center;
+          padding-left: 10%;
+          padding-right: 10%;
+          background-color:#fffcf3;
+    }
+    ::-webkit-scrollbar { display: none; }
+
+
+    p {
+      color: #60522b;
+      margin-top: 10px;
+      font-family: '나눔스퀘어_ac';
+      line-height: 160%;
+      font-size: 13.2px;
+    }
+    .youtube a {
+      line-height: 200%;
+      font-family: '나눔스퀘어_ac ExtraBold';
+      text-decoration: none;
+      color: #cec3a1;
+    }
+    /*Header/Blog Title*/
+    .header {
+      text-align: center;
+      background: none;
+      border-radius: 5px;
+    }
+
+    /*Style the top navigation bar*/
+    .topnav {
+      font-family: '나눔스퀘어_ac ExtraBold';
+      overflow: hidden;/*visible, scroll, auto*/
+      background-color: none;
+      border-top: solid 6px #cec3a1;
+      border-bottom: solid 6px #cec3a1;
+    }
+    /*Style the topnav links*/
+    .topnav a {
+      /*float: left;*/
+      display: inline-block;
+      color: #cec3a1;
+      text-align: center;
+      padding: 14px 18px;
+      text-decoration: none;
+    }
+    .topnav a:hover {
+      background-color: none;
+      color: #f7f0da;
+    }
+    #sub_menu {
+      margin-top: 10px;
+      font-family: "나눔스퀘어_ac ExtraBold";
+      text-align: left;
+      padding-left: 20px;
+      padding-right: 50px;
+    }
+    #sub_menu li {
+      padding-top: 3px;
+      padding-bottom: 3px;
+      padding-left: 20px;
+      border-radius: 3px;
+      font-size: 14px;
+      list-style-type: none;
+      line-height: 190%;
+      border-bottom: dotted 1px white;
+      background-color: #f7f0da;
+      color: #cec3a1;
+    }
+    #sub_menu li:hover {
+      color:#60522b;
+      background-color:  #cec3a1;
+    }
+
+
+    .current {
+    font-size: 16px;
+    color: #60522b;
+
+    }
+    .leftcolumn h3 {
+      padding-top: 10px;
+      margin-left: 20px;
+      margin-right: 50px;
+      height: 40px;
+      font-family: "나눔스퀘어_ac ExtraBold";
+      background-color: #cec3a1;
+      border-radius: 6px;
+      font-size: 16px;
+      text-align: center;
+      color: white;
+    }
+    .leftcolumn h3:hover{
+      font-family: "나눔스퀘어_ac ExtraBold";
+      background-color: #aa9b71;
+      border-radius: 6px;
+      text-align: center;
+      color: white;
+    }
+    .leftcolumn a {
+      text-decoration: none;
+    }
+    /*Create two unequeal columns that floats next to each other*/
+    /*left column*/
+    .leftcolumn {
+      padding-top: 20px;
+      float: left;
+      width: 20%;
+      text-align: right;
+    }
+    .centercolumn {
+      margin-top: 70px;
+      float: left;
+      width: 50%;
+    }
+    .rightcolumn {
+      width: 30%;
+      float: right;
+      padding-left: 25px;
+      margin-top: 70px;
+      text-align: left;
+  /*background-color: yellow;*/
+    }
+
+      /*right column*/
+    .card {
+      text-align: left;
+      background-color: none;
+    }
+
+
+    .rightcolumn h3 {
+      color: #595249;
+      padding-top: 200px;
+      font-size: 16px;
+      font-family: "나눔스퀘어_ac ExtraBold";
+    }
+    .card2 {
+      font-size: 13px;
+      font-family: "나눔스퀘어_ac ExtraBold";
+      color: #cec3a1;
+      line-height: 150%;
+    }
+
+    /*clear floats after the columns*/
+    .row:after { /*begore*/
+      content: ""; /*.row 다음에 content ""안에 있는 내용을 입력하시오.*/
+      display: table;
+      clear: both;
+    }
+
+    .footer {
+      color: white;
+      padding: 10px;
+      text-align: center;
+      background-color: #cec3a1;
+      border-radius: 4px;
+    }
+    .fl {
+      padding-top:12px;
+      font-size: 12px;
+      font-family: "나눔스퀘어_ac ExtraBold";
+      text-align: center;
+    }
+    .fr {
+      padding-top:12px;
+      font-size: 9px;
+      font-family: "나눔스퀘어_ac ExtraBold";
+      float: right;
+    }
+
+    /* Responsive layout - when the screen is less than 800px wide,
+    make the two  columns stack on top of each other instead of next to each other*/
+    @media screen and (max-width: 800px) {
+      .leftcolumn, .rightcolumn {
+        width: 100%;
+        padding: 0;
+      }
+      /* Responsive layout - when the screen is less than 400px wide,
+      make the navigation link stack on top of each other instead of next to each other*/
+    }
+    @media screen and (max-width: 400px) {
+      .topnav a {
+        float: none;
+        width: 100%;
+      }
+    }
+
+
+
+
+
+
+      </style>
+  </head>
+  <body>
+    <div class="header" style= 'height: 120px'>
+      <a href= 'index.html'><img src= './img/dosonlogo.gif' height='130px'></a>
+    </div>
+
+    <div class="topnav">
+      <a href="#.html"   style= 'color:#60522b'>Moving Image</a>
+      <a href="designc.html">Contents Design</a>
+      <a href="3dc.html">3D Design</a>
+    <a href= "pgc.html">Programming</a>
+    </div>
+
+
+    <div class="row">
+      <div class="leftcolumn" style= 'height: 300px'> <a href= 'movingc.html'>
+        <h3>Moving Design</h3></a>
+          <nav id= 'sub_menu' style= 'height: 150px'>
+            <a href= '#.html'> <li><span class= 'current'>모션그래픽</span></li></a>
+            <a href= 'snow.html'><li>홍보영상</li></a>
+
+          </nav>
+      </div>
+
+      <div class="centercolumn" style= 'height: 410px'>
+        <div class="card">
+          <img src= './img/dosonpp.jpg'style= 'width: 49%'>
+          <img src= './img/dosonp.jpg'style= 'width: 49%'><br>
+          <img src= './img/dosonppp.jpg'style= 'width: 49%'>
+          <img src= './img/dosonpppp.jpg'style= 'width: 49%'>
+        </div>
+      </div>
+
+      <div class="rightcolumn" style= 'height: 100px'>
+        <div class="card2">
+          Professor | 장윤제 <br>
+          2020.10.26
+        </div>
+          <h3>[ "DIPTIQUE" 3D 애니메이션 제작 ]</h3>
+          <p>처음 배운 에프터 이펙트로 프랑스 향수 브랜드 딥티크를 표현했다. <br>
+           브랜드 대표 향수의 향을 시각적으로 표현하기 위해 향을 맡으면 <br> 생각나는 자연의 모습을 담았다.<br>
+         <span class= 'youtube'><a href= 'https://www.youtube.com/watch?v=l50puSLYkII' target= '_blank'>영상으로 보기!<a></span></p>
+        </div>
+
+      </div>
+        <!--class= 'row'에는 column 다음에 float해제시키는 css가 있으므로 footer전에 float해제를 css에 넣은것-->
+
+
+        <div class="footer" style= 'height: 55px'>
+          <span class= 'fr'>계원예술대학교</span>
+            <span class= 'fl'>Copyright_&nbsp JeongYeonKim</span>
+            </div>
+
+
+
+  </body>
+</html>

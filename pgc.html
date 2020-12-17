@@ -1,0 +1,199 @@
+<!DOCTYPE html><!--22061026_김정연-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Programming</title>
+    <style>
+    *{
+      margin: 0;
+	    padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+       -ms-overflow-style: none;
+         text-align: center;
+          padding-left: 10%;
+          padding-right: 10%;
+          background-color:#f9f9f9;
+    }
+    ::-webkit-scrollbar { display: none; }
+
+
+    p {
+      color: #777a84;
+      margin-top: 5px;
+      font-family: '나눔스퀘어_ac';
+      line-height: 150%;
+      font-size: 13px;
+    }
+    /*Header/Blog Title*/
+    .header {
+      text-align: center;
+      background: none;
+      border-radius: 5px;
+    }
+
+      /*Style the top navigation bar*/
+    .topnav {
+      font-family: '나눔스퀘어_ac ExtraBold';
+      overflow: hidden;/*visible, scroll, auto*/
+      background-color: none;
+      border-top: solid 6px #777a84;
+      border-bottom: solid 6px #777a84;
+    }
+    /*Style the topnav links*/
+    .topnav a {
+      /*float: left;*/
+      display: inline-block;
+      color: #777a84;
+      text-align: center;
+      padding: 14px 18px;
+      text-decoration: none;
+    }
+    .topnav a:hover {
+      background-color: none;
+      color: #dadde0;
+    }
+
+
+    .sleftcolumn h3 {
+      padding-top: 10px;
+      margin-left: 40px;
+      margin-right: 10px;
+      height: 40px;
+      font-family: "나눔스퀘어_ac ExtraBold";
+      background-color: #878a93;
+      border-radius: 6px;
+      font-size: 16px;
+      text-align: center;
+      color: white;
+    }
+    /*Create two unequeal columns that floats next to each other*/
+    /*left column*/
+
+    .sleftcolumn {
+      padding-top: 10px;
+      padding-right: 20px;
+      float: left;
+      width: 100%;
+      text-align: center;
+    }
+    .sleftcolumn a {
+    opacity: 50%;
+    }
+    .sleftcolumn a:hover {
+    opacity: 100%;
+    }
+    .ltext {
+      padding-top: 10px;
+      text-align: center;
+
+      font-family: "나눔스퀘어_ac ExtraBold";
+      font-size: 16px;
+    }
+
+      /*right column*/
+
+
+    .card {
+      text-align: center;
+      border-radius: 3.5px;
+      background-color: none;
+      padding-left: 40px;
+      margin-top: 20px;
+    }
+    .card2 {
+      padding-top: 15px;
+      /*margin-left: 300px;*/
+    }
+    .card3 {
+      padding-top: 20px;
+    }
+
+    /*clear floats after the columns*/
+    .row:after { /*begore*/
+      content: ""; /*.row 다음에 content ""안에 있는 내용을 입력하시오.*/
+      display: table;
+      clear: both;
+    }
+    .bold {
+          padding: auto;
+      font-size: 13px;
+      font-family: "나눔스퀘어_ac ExtraBold";
+    }
+    .footer {
+      color: white;
+      padding: 10px;
+      text-align: center;
+      background-color: #777a84;
+      border-radius: 4px;
+    }
+    .fl {
+      padding-top:12px;
+      font-size: 12px;
+      font-family: "나눔스퀘어_ac ExtraBold";
+      text-align: center;
+    }
+    .fr {
+      padding-top:12px;
+      font-size: 9px;
+      font-family: "나눔스퀘어_ac ExtraBold";
+      float: right;
+    }
+
+    /* Responsive layout - when the screen is less than 800px wide,
+    make the two  columns stack on top of each other instead of next to each other*/
+    @media screen and (max-width: 800px) {
+      .leftcolumn, .rightcolumn {
+        width: 100%;
+        padding: 0;
+      }
+      /* Responsive layout - when the screen is less than 400px wide,
+      make the navigation link stack on top of each other instead of next to each other*/
+    }
+    @media screen and (max-width: 400px) {
+      .topnav a {
+        float: none;
+        width: 100%;
+      }
+    }
+
+
+
+
+      </style>
+  </head>
+  <body>
+    <div class="header" style= 'height: 120px'>
+      <a href= 'index.html'><img src= './img/logo.gif' height='130px'></a>
+    </div>
+
+    <div class="topnav">
+      <a href="movingc.html">Moving Image</a>
+      <a href="designc.html">Contents Design</a>
+      <a href="3dc.html">3D Design</a>
+      <a href= "#.html"   style= 'color: black'>Programming</a>
+    </div>
+
+<div class="row">
+      <div class="sleftcolumn" style= 'height: 520px'>
+        <div class="card" style= 'width: 20%'>
+          <h3>Programming</h3>
+        </div>
+          <div class="card2"style= 'width: 100%'>
+          <a href= 'hidden.html'><img src= './img/hiddenp.jpg' style= 'width:50%'></a>
+          <p span class= 'ltext'>[ "HiddenFigures" 영화 소개 사이트 제작 ]</p>
+        </div>
+      </div>
+      <!--class= 'row'에는 column 다음에 float해제시키는 css가 있으므로 footer전에 float해제를 css에 넣은것-->
+</div>
+
+<div class="footer" style= 'height: 55px'>
+  <span class= 'fr'>계원예술대학교</span>
+    <span class= 'fl'>Copyright_&nbsp JeongYeonKim</span>
+    </div>
+
+
+
+  </body>
+</html>
